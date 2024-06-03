@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Hotel Logo</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rooms.html">Accommodation</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <div class="logo">Hotel Logo</div>
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rooms.html">Accommodation</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Luxury Hotel</h1>
+            <p>Experience the finest luxury and comfort.</p>
+            <div class="cta-buttons">
+                <button>Book Now</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+<section class="about-hotel-section">
+    <div class="about-hotel-container">
+        <div class="about-hotel-text">
+            <h2>About Our Hotel</h2>
+            <p>Welcome to our luxurious five-star hotel, where elegance meets comfort. Nestled in the heart of the city, our hotel offers unparalleled hospitality and top-notch amenities to ensure an unforgettable stay.</p>
+        </div>
+        <div class="about-hotel-history">
+            <h2>Our History</h2>
+            <p>Established in 1920, our hotel has a rich history of providing exceptional service to guests from all around the world. With over a century of experience, we have perfected the art of hospitality, making us a preferred choice for discerning travelers.</p>
+        </div>
+    </div>
+</section>
+
+<section class="team-section">
+    <div class="team-container">
+        <h2>Meet Our Team</h2>
+        <div class="team-cards">
+            <div class="team-card">
+                <img src="team-member1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>General Manager</p>
+            </div>
+            <div class="team-card">
+                <img src="team-member2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Head Chef</p>
+            </div>
+            <div class="team-card">
+                <img src="team-member3.jpg" alt="Team Member 3">
+                <h3>Sarah Johnson</h3>
+                <p>Guest Relations Manager</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section">
+    <div class="services-container">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <img src="concierge.jpg" alt="Concierge Service">
+                <h3>Concierge Service</h3>
+                <p>Our concierge team is available 24/7 to assist with reservations, transportation, and any special requests you may have.</p>
+            </div>
+            <div class="service-item">
+                <img src="valet-parking.jpg" alt="Valet Parking">
+                <h3>Valet Parking</h3>
+                <p>Enjoy the convenience of our valet parking service, available to all guests for a hassle-free experience.</p>
+            </div>
+            <div class="service-item">
+                <img src="spa-treatments.jpg" alt="Spa Treatments">
+                <h3>Spa Treatments</h3>
+                <p>Relax and rejuvenate with our luxurious spa treatments, designed to pamper you from head to toe.</p>
+            </div>
+            <div class="service-item">
+                <img src="room-service.jpg" alt="Room Service">
+                <h3>Room Service</h3>
+                <p>Indulge in our 24-hour room service, offering a wide range of gourmet meals and beverages delivered to your room.</p>
+            </div>
+            <div class="service-item">
+                <img src="fitness-center.jpg" alt="Fitness Center">
+                <h3>Fitness Center</h3>
+                <p>Maintain your fitness routine with our state-of-the-art fitness center, open 24 hours a day.</p>
+            </div>
+            <div class="service-item">
+                <img src="laundry-service.jpg" alt="Laundry Service">
+                <h3>Laundry Service</h3>
+                <p>Take advantage of our laundry and dry cleaning services to keep your clothes fresh and clean during your stay.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonial-section">
+    <h1>Testiomonies</h1>
+    <div class="testimonial-container">
+        <div class="testimonial-slide">
+            <img src="person1.jpg" alt="Person 1">
+            <p>"Our stay at the hotel was absolutely wonderful! The service was exceptional and the rooms were luxurious."</p>
+            <h3>- John Doe</h3>
+        </div>
+        <div class="testimonial-slide">
+            <img src="person2.jpg" alt="Person 2">
+            <p>"A truly remarkable experience. The amenities were top-notch and the staff made us feel right at home."</p>
+            <h3>- Jane Smith</h3>
+        </div>
+        <div class="testimonial-slide">
+            <img src="person3.jpg" alt="Person 3">
+            <p>"I would highly recommend this hotel to anyone looking for a luxurious and comfortable stay."</p>
+            <h3>- Sarah Johnson</h3>
+        </div>
+        <!-- Duplicate the first slide to create a seamless loop -->
+        <div class="testimonial-slide">
+            <img src="person1.jpg" alt="Person 1">
+            <p>"Our stay at the hotel was absolutely wonderful! The service was exceptional and the rooms were luxurious."</p>
+            <h3>- John Doe</h3>
+        </div>
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+</section>
+<section class="follow-us-section">
+    <div class="follow-us-container">
+        <div class="follow-us-text">
+            <h2>Follow Us</h2>
+            <p>Stay connected with us through social media for the latest updates and offers.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <h2>Company Name</h2>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </div>
+        <div class="footer-column">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h2>Subscribe</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </div>
+        <div class="footer-column">
+            <h2>Subscribe</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

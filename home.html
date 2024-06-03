@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">Hotel Logo</div>
+        <div class="menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rooms.html">Accommodation</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <div class="logo">Hotel Logo</div>
+
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rooms.html">Accommodation</a>
+            <a href="gallery.html">Ammenities</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Luxury Hotel</h1>
+            <p>Experience the finest luxury and comfort.</p>
+            <div class="cta-buttons">
+                <button>Book Now</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="about-us-container">
+            
+            <div class="about-us-text">
+                <h1>About Us</h1>
+                <p>Welcome to our luxury hotel, where comfort meets elegance. Our hotel offers the finest amenities and services to ensure a memorable stay. Enjoy our exquisite dining options, state-of-the-art facilities, and unparalleled hospitality.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="about-us-images">
+                <img src="hero_image01.webp" alt="Hotel Image 1" class="big-image">
+                <img src="hero_image01.webp" alt="Hotel Image 2" class="small-image">
+            </div>
+        </div>
+    </section>
+    <section class="amenities">
+        <div class="amenities-container">
+            <h1>Our Amenities</h1>
+            <div class="amenities-list">
+                <div class="amenity-item">
+                    <img src="pool.jpg" alt="Swimming Pool">
+                    <h2>Swimming Pool</h2>
+                    <p>Relax and enjoy our luxurious swimming pool.</p>
+                </div>
+                <div class="amenity-item">
+                    <img src="pool.jpg" alt="Swimming Pool">
+                    <h2>Swimming Pool</h2>
+                    <p>Relax and enjoy our luxurious swimming pool.</p>
+                </div>
+                <div class="amenity-item">
+                    <img src="pool.jpg" alt="Swimming Pool">
+                    <h2>Swimming Pool</h2>
+                    <p>Relax and enjoy our luxurious swimming pool.</p>
+                </div>
+                <div class="amenity-item">
+                    <img src="spa.jpg" alt="Spa">
+                    <h2>Spa</h2>
+                    <p>Indulge in our rejuvenating spa services.</p>
+                </div>
+                <div class="amenity-item">
+                    <img src="restaurant.jpg" alt="Restaurant">
+                    <h2>Restaurant</h2>
+                    <p>Savor gourmet meals at our world-class restaurant.</p>
+                </div>
+                <div class="amenity-item">
+                    <img src="gym.jpg" alt="Gym">
+                    <h2>Gym</h2>
+                    <p>Stay fit with our state-of-the-art gym facilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide fade">
+                <img src="hero_image01.webp" alt="Slide 1">
+                <div class="carousel-text">Luxury Room</div>
+            </div>
+            <div class="carousel-slide fade">
+                <img src="hero_image01.webp" alt="Slide 2">
+                <div class="carousel-text">Exquisite Dining</div>
+            </div>
+            <div class="carousel-slide fade">
+                <img src="hero_image01.webp" alt="Slide 3">
+                <div class="carousel-text">Beautiful Scenery</div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <section class="room-cards">
+        <h1>Rooms</h1>
+        <div class="room-card" id="room1">
+            <img src="hero_image01.webp" alt="Room 1">
+            <div class="card-content">
+                <h2>Deluxe Room</h2>
+                <p>Experience the ultimate luxury and comfort in our deluxe rooms.</p>
+                <button onclick="bookRoom('room1')"><a href="booking.html">Book Now</a></button>
+                <button onclick="showDetails('room1')"><a href="room.html">Details</a></button>
+            </div>
+        </div>
+        <div class="room-card" id="room2">
+            <img src="hero_image01.webp" alt="Room 2">
+            <div class="card-content">
+                <h2>Executive Suite</h2>
+                <p>Our executive suites offer a perfect blend of luxury and space.</p>
+                <button onclick="bookRoom('room2')"><a href="booking.html">Book Now</a></button>
+                <button onclick="showDetails('room2')"><a href="room.html">Details</a></button>
+            </div>
+        </div>
+        <div class="room-card" id="room3">
+            <img src="hero_image01.webp" alt="Room 3">
+            <div class="card-content">
+                <h2>Presidential Suite</h2>
+                <p>Indulge in the grandeur of our presidential suites.</p>
+                <button onclick="bookRoom('room3')"><a href="booking.html">Book Now</a></button>
+                <button onclick="showDetails('room3')"><a href="room.html">Details</a></button>
+            </div>
+        </div>
+
+    </section>
+    <section class="video-section">
+        <video controls poster="hero_image01.webp">
+            <source src="video01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section class="room-cards">
+        <h1>Rooms</h1>
+        <div class="room-card" id="room1">
+            <img src="hero_image01.webp" alt="Room 1">
+            <div class="card-content">
+                <h2>Deluxe Room</h2>
+                <p>Experience the ultimate luxury and comfort in our deluxe rooms.</p>
+                <button onclick="bookRoom('room1')">Book Now</button>
+                <button onclick="showDetails('room1')">Details</button>
+            </div>
+        </div>
+        <div class="room-card" id="room2">
+            <img src="hero_image01.webp" alt="Room 2">
+            <div class="card-content">
+                <h2>Executive Suite</h2>
+                <p>Our executive suites offer a perfect blend of luxury and space.</p>
+                <button onclick="bookRoom('room2')">Book Now</button>
+                <button onclick="showDetails('room2')">Details</button>
+            </div>
+        </div>
+        <div class="room-card" id="room3">
+            <img src="hero_image01.webp" alt="Room 3">
+            <div class="card-content">
+                <h2>Presidential Suite</h2>
+                <p>Indulge in the grandeur of our presidential suites.</p>
+                <button onclick="bookRoom('room3')">Book Now</button>
+                <button onclick="showDetails('room3')">Details</button>
+            </div>
+        </div>
+        <button class="explore-button" onclick="exploreRooms()">Explore More Rooms</button>
+
+    </section>
+  
+    <section class="testimonial-section">
+        <h1>Testiomonies</h1>
+        <div class="testimonial-container">
+            <div class="testimonial-slide">
+                <img src="person1.jpg" alt="Person 1">
+                <p>"Our stay at the hotel was absolutely wonderful! The service was exceptional and the rooms were luxurious."</p>
+                <h3>- John Doe</h3>
+            </div>
+            <div class="testimonial-slide">
+                <img src="person2.jpg" alt="Person 2">
+                <p>"A truly remarkable experience. The amenities were top-notch and the staff made us feel right at home."</p>
+                <h3>- Jane Smith</h3>
+            </div>
+            <div class="testimonial-slide">
+                <img src="person3.jpg" alt="Person 3">
+                <p>"I would highly recommend this hotel to anyone looking for a luxurious and comfortable stay."</p>
+                <h3>- Sarah Johnson</h3>
+            </div>
+            <!-- Duplicate the first slide to create a seamless loop -->
+            <div class="testimonial-slide">
+                <img src="person1.jpg" alt="Person 1">
+                <p>"Our stay at the hotel was absolutely wonderful! The service was exceptional and the rooms were luxurious."</p>
+                <h3>- John Doe</h3>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
+    
+    
+    
+    
+    <section class="about-us">
+        <div class="about-us-container">
+            
+            <div class="about-us-text">
+                <h1>About Us</h1>
+                <p>Welcome to our luxury hotel, where comfort meets elegance. Our hotel offers the finest amenities and services to ensure a memorable stay. Enjoy our exquisite dining options, state-of-the-art facilities, and unparalleled hospitality.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="about-us-images">
+                <img src="hero_image01.webp" alt="Hotel Image 1" class="big-image">
+                <img src="hero_image01.webp" alt="Hotel Image 2" class="small-image">
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="about-us-container">
+            
+            <div class="about-us-images">
+                <img src="hero_image01.webp" alt="Hotel Image 1" class="big-image">
+            </div>
+            <div class="about-us-text">
+                <h1>About Us</h1>
+                <p>Welcome to our luxury hotel, where comfort meets elegance. Our hotel offers the finest amenities and services to ensure a memorable stay. Enjoy our exquisite dining options, state-of-the-art facilities, and unparalleled hospitality.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="gallery-section">
+        <h1>Gallery</h>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="hero_image01.webp" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="hero_image01.webp" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="hero_image01.webp" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="hero_image01.webp" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="hero_image01.webp" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="hero_image01.webp" alt="Gallery Image 6">
+            </div>
+
+        </div>
+        <h3 style="right:20px;"><a href="gallery.html" >Explore more</a></h3>
+
+    </section>
+    <section class="follow-us-section">
+        <div class="follow-us-container">
+            <div class="follow-us-text">
+                <h2>Follow Us</h2>
+                <p>Stay connected with us through social media for the latest updates and offers.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="twitter-icon.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="linkedin-icon.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Company Name</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                </div>
+                <p>&copy; 2024 Company Name. All rights reserved.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>Subscribe</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-column">
+                <h2>Subscribe</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
