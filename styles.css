@@ -412,6 +412,9 @@ footer {
         width: 80%;
         margin: 1rem 0;
     }
+    .ammenities-container{
+        width:100%;
+    }
     .amenities{
         width:100%;
     }
