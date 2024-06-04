@@ -13,7 +13,7 @@ nav {
     background-color: #333;
     color: #fff;
     position: fixed;
-    max-width: 100%;
+    width: 100%;
     top: 0;
     z-index: 1000;
     
@@ -57,13 +57,11 @@ nav .hamburger .line {
     justify-content: flex-start;
     padding: 2rem;
     color: #fff;
-    width: 100%;
-    
 }
 
 .hero-content {
-    max-width: 100%;
-    opacity: 1;
+    max-width: 600px;
+    opacity: 0.3;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
@@ -111,12 +109,6 @@ nav .hamburger .line {
         display: flex;
         
     }
-    .hero{
-        width:100%;
-    }
-    .about-us{
-        width:100%;
-    }
     
 }
 
@@ -160,7 +152,6 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 2rem 0;
-    width:100%;
 }
 
 .footer-container {
@@ -227,7 +218,7 @@ footer {
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: left;
+        align-items: center;
     }
 
     .footer-column {
@@ -235,7 +226,7 @@ footer {
     }
 
     .footer-column form {
-        align-items: left;
+        align-items: center;
     }
 
     .footer-column form input, .footer-column form button {
@@ -250,7 +241,6 @@ footer {
     display: flex;
     padding: 4rem 2rem;
     background-color: #f9f9f9;
-    width:100%;
     
 }
 
@@ -258,7 +248,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -319,7 +309,6 @@ footer {
     .about-us {
         flex-direction: column;
         padding: 2rem 1rem;
-        width:100%;
     }
 
     .about-us-images {
@@ -363,7 +352,6 @@ footer {
 .amenities {
     padding: 4rem 2rem;
     background-color: #fff;
-    width: 100%;
 }
 
 .amenities-container {
@@ -487,10 +475,6 @@ footer {
         height: 10px;
         width: 10px;
     }
-    .carousel{
-        width:100%;
-        height:auto;
-    }
 }
 
 
@@ -507,12 +491,11 @@ footer {
     padding: 4rem 2rem;
     background-color: #f9f9f9;
     flex-wrap: wrap;
-    width:100%;
 }
 
 .room-card {
     flex: 1;
-    min-width: 200px;
+    min-width: 300px;
     max-width: 350px;
     margin: 1rem;
     padding: 1rem;
@@ -580,11 +563,10 @@ footer {
     .room-cards {
         flex-direction: column;
         align-items: center;
-        width:100%;
     }
 
     .room-card {
-        width: 80%;
+        width: 100%;
     }
 
     .explore-button {
