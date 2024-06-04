@@ -906,4 +906,7 @@ button.prev:hover, button.next:hover {
         width: 100%;
         max-width: 400px;
     }
+    .services-section {
+        width:100%;
+    }
 }
