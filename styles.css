@@ -776,6 +776,14 @@ button.prev:hover, button.next:hover {
         max-width: calc(50% - 1rem);
     }
 }
+@media (max-width: 768px) {
+    .gallery-section {
+        width:100%
+    }
+    .gallery-container{
+        width:80%;
+    }
+}
 
 @media (max-width: 480px) {
     .gallery-item {
