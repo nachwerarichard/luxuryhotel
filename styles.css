@@ -320,12 +320,14 @@ footer {
         width:100%;
     }
     .about-us-text{
-        width:80%;
+        width:100%;
+        text-align:center;
     }
 
     .about-us-images {
-        width: 80%;
+        width: 100%;
         margin-bottom: 2rem;
+        align-content:center;
         height: auto; /* Adjust height as needed */
     }
 
