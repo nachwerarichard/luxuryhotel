@@ -247,7 +247,7 @@ footer {
     padding: 4rem 2rem;
     background-color: #f9f9f9;
     max-width:100%;
-    win-width:100px;
+    min-width:100px;
 }
 
 .about-us-container {
@@ -803,6 +803,7 @@ button.prev:hover, button.next:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width:100%;
     min-width:100px;
 }
 
