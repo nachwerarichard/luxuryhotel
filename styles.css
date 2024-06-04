@@ -580,10 +580,11 @@ footer {
     .room-cards {
         flex-direction: column;
         align-items: center;
+        width:100%;
     }
 
     .room-card {
-        width: 100%;
+        width: 80%;
     }
 
     .explore-button {
