@@ -245,7 +245,8 @@ footer {
 .about-us {
     display: flex;
     padding: 4rem 2rem;
-    background-color: #f9f9f9;
+    background-color: blue;
+    width:100%;
     
 }
 
