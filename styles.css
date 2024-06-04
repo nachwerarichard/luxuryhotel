@@ -246,8 +246,8 @@ footer {
     display: flex;
     padding: 4rem 2rem;
     background-color: #f9f9f9;
-    width:100%;
-    
+    max-width:100%;
+    win-width:100px;
 }
 
 .about-us-container {
@@ -775,7 +775,7 @@ button.prev:hover, button.next:hover {
 @media (max-width: 768px) {
     .gallery-item {
         flex: 1 1 calc(50% - 1rem);
-        max-width: calc(50% - 1rem);
+        width:80%;
     }
 }
 @media (max-width: 768px) {
@@ -783,7 +783,7 @@ button.prev:hover, button.next:hover {
         width:100%
     }
     .gallery-container{
-        width:80%;
+        width:100%;
     }
 }
 
@@ -803,7 +803,7 @@ button.prev:hover, button.next:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    min-width:100px;
 }
 
 .follow-us-container {
