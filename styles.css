@@ -774,6 +774,7 @@ button.prev:hover, button.next:hover {
 .team-section {
     padding: 4rem 2rem;
     background-color: blue;
+    min-width:100px;
 }
 
 .team-container {
@@ -835,6 +836,9 @@ button.prev:hover, button.next:hover {
     .team-card {
         width: 100%;
         max-width: 400px;
+    }
+    .team-section{
+        width:100%;
     }
 }
 /* styles.css */
