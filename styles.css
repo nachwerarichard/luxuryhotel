@@ -246,7 +246,6 @@ footer {
     display: flex;
     padding: 4rem 2rem;
     background-color: #f9f9f9;
-    max-width:100%;
     min-width:100px;
 }
 
@@ -315,6 +314,7 @@ footer {
     .about-us {
         flex-direction: column;
         padding: 2rem 1rem;
+        width:100%;
     }
 
     .about-us-images {
@@ -338,7 +338,7 @@ footer {
     }
 
     .about-us-text {
-        width: 100%;
+        width: 80%;
         padding: 1rem;
         text-align: center;
     }
