@@ -316,11 +316,17 @@ footer {
         padding: 2rem 1rem;
         width:100%;
     }
+    .about-us-container{
+        width:100%;
+    }
+    .about-us-text{
+        width:80%;
+    }
 
     .about-us-images {
-        width: 100%;
+        width: 80%;
         margin-bottom: 2rem;
-        height: 200px; /* Adjust height as needed */
+        height: auto; /* Adjust height as needed */
     }
 
     .about-us-images .big-image {
