@@ -57,11 +57,10 @@ nav .hamburger .line {
     justify-content: flex-start;
     padding: 2rem;
     color: #fff;
-    width:100%;
 }
 
 .hero-content {
-    max-width: 100%;
+    max-width: 600px;
     opacity: 0.3;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -110,9 +109,6 @@ nav .hamburger .line {
         display: flex;
         
     }
-    .hero{
-        width:100%;
-    }
     
 }
 
@@ -156,7 +152,6 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 2rem 0;
-    width:100%;
 }
 
 .footer-container {
@@ -164,7 +159,6 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 2rem;
-    width:100%;
 }
 
 .footer-column {
@@ -225,13 +219,10 @@ footer {
     .footer-container {
         flex-direction: column;
         align-items: center;
-        width:100%;
     }
-.footer-
 
     .footer-column {
         margin: 0.5rem 0;
-       width:100%;
     }
 
     .footer-column form {
@@ -250,7 +241,6 @@ footer {
     display: flex;
     padding: 4rem 2rem;
     background-color: #f9f9f9;
-    width:100%;
     
 }
 
@@ -258,7 +248,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -266,7 +256,7 @@ footer {
 .about-us-images {
     position: relative;
     flex: 1;
-    min-width: 100px;
+    min-width: 300px;
     height: 300px; /* Adjust height as needed */
 }
 
@@ -291,7 +281,7 @@ footer {
 
 .about-us-text {
     flex: 1;
-    min-width: 100px;
+    min-width: 300px;
     padding: 2rem;
 }
 
@@ -319,13 +309,12 @@ footer {
     .about-us {
         flex-direction: column;
         padding: 2rem 1rem;
-        width:100%;
     }
 
     .about-us-images {
         width: 100%;
         margin-bottom: 2rem;
-        height: auto; /* Adjust height as needed */
+        height: 200px; /* Adjust height as needed */
     }
 
     .about-us-images .big-image {
@@ -363,11 +352,10 @@ footer {
 .amenities {
     padding: 4rem 2rem;
     background-color: #fff;
-    width:100%;
 }
 
 .amenities-container {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
@@ -411,11 +399,10 @@ footer {
     .amenities-list {
         flex-direction: column;
         align-items: center;
-        width:100%;
     }
 
     .amenity-item {
-        width: 80%;
+        width: 100%;
         margin: 1rem 0;
     }
 }
@@ -504,12 +491,11 @@ footer {
     padding: 4rem 2rem;
     background-color: #f9f9f9;
     flex-wrap: wrap;
-    width:100%;
 }
 
 .room-card {
     flex: 1;
-    min-width: 100px;
+    min-width: 300px;
     max-width: 350px;
     margin: 1rem;
     padding: 1rem;
@@ -577,11 +563,10 @@ footer {
     .room-cards {
         flex-direction: column;
         align-items: center;
-        width:100%;
     }
 
     .room-card {
-        width: 80%;
+        width: 100%;
     }
 
     .explore-button {
@@ -609,7 +594,6 @@ footer {
 @media (max-width: 768px) {
     .video-section {
         padding: 1rem;
-        width:100%;
     }
 
     .video-section video {
@@ -649,7 +633,7 @@ footer {
 .testimonial-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%;
+    width: 300%;
 }
 
 .testimonial-slide {
@@ -685,12 +669,6 @@ footer {
 
     .testimonial-slide h3 {
         font-size: 0.8rem;
-    }
-    .testimonial-container{
-        width:100%;
-    }
-    .testimonial-section{
-        width:100%;
     }
 }
 @media (max-width: 768px) {
@@ -754,8 +732,7 @@ button.prev:hover, button.next:hover {
 /* Gallery Section */
 .gallery-section {
     padding: 4rem 2rem;
-    background-color: #f9f9f9
-    width:100%;
+    background-color: #f9f9f9;
 }
 
 .gallery-container {
@@ -786,19 +763,18 @@ button.prev:hover, button.next:hover {
 }
 
 @media (max-width: 768px) {
-    gallery-section{
-        width:100%;
-    }
-    .gallery-container{
-        width:100%;
-    }
     .gallery-item {
         flex: 1 1 calc(50% - 1rem);
-        width:80%;
+        max-width: calc(50% - 1rem);
     }
 }
 
-
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
 
 /* styles.css */
 
@@ -809,7 +785,7 @@ button.prev:hover, button.next:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
+    
 }
 
 .follow-us-container {
@@ -862,10 +838,6 @@ button.prev:hover, button.next:hover {
     .follow-us-container {
         flex-direction: column;
         text-align: center;
-        width:100%;
-    }
-    .follow-us-section{
-        width:100%;
     }
 
     .social-icons {
