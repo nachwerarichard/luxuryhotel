@@ -261,8 +261,8 @@ footer {
 .about-us-images {
     position: relative;
     flex: 1;
-    min-width: 300px;
-    height: 300px; /* Adjust height as needed */
+    min-width: 100px;
+    height: auto; /* Adjust height as needed */
 }
 
 .about-us-images img {
@@ -314,6 +314,7 @@ footer {
     .about-us {
         flex-direction: column;
         padding: 2rem 1rem;
+        width:100%;
     }
 
     .about-us-images {
